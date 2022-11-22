@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.container{
+    height: 100vh;
+    background-color:#ffaaab;
+    display: flex;
+    flex-direction: column;
+}
+.topBox{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 70%;
+    width: 80%;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#penger{
+    font-size:50px ;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#dinePenger{
+    font-size:20px;
+    margin-top: -40px;
+}
+.lowerBox{
+    height: 70%;
+    width: 100%;
+}
+
+.itemContainer{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
