@@ -35,9 +35,38 @@ body{
     font-size:20px;
     margin-top: -40px;
 }
+#edit{
+    border: none;
+    background-color:white;
+    position: absolute;
+    margin-left: 225px;
+    margin-top: -125px;
+}
 .lowerBox{
     height: 70%;
     width: 100%;
+}
+.buttons{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.fa-trash-can {
+    color: white;
+}
+.fa-plus {
+    color: white;
+}
+.buttonFunc{
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#ff5e6c;
+    border: 1px solid red;
 }
 
 .itemContainer{
@@ -46,4 +75,26 @@ body{
     width: 100%;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
+}
+/* Modal */
+.modal-penger{
+    position: fixed;
+    display: none ;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 250px;
+    width: 300px;
 }
