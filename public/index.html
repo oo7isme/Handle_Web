@@ -11,18 +11,34 @@
 </head>
 <body>
  <div class="container">
-    <div id="popup" class="modal-penger">
-        <div class="modal-content">
-            <p id="setPengerText">Skriv inn din saldo</p>
-            <input type="text"></input>
-            <button id="yes">Ja</button>
-            <button id="no">Nei</button>
+    <div id="popup" class="modal">
+        <div class="blur">
+            <div class="modal-content">
+                <p id="setText">Skriv inn din saldo</p>
+                <input inputmode="numeric" type="number" id="text" placeholder="Din Saldo"></input>
+                <div class="btnContainer">
+                    <button class="btnModal-penger" id="no">Nei</button>
+                    <button class="btnModal-penger"  id="yes">Ja</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-add" class="modal">
+        <div class="blur">
+            <div class="modal-content">
+                <p id="setText">Skriv inn produkt</p>
+                <input type="text" id="text" placeholder="Produkt"></input>
+                <div class="btnContainer">
+                    <button class="btnModal-penger" id="no">Nei</button>
+                    <button class="btnModal-penger"  id="yes">Ja</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="topBox">
         <div class="card">
-            <button id="edit" ><i class="fa-solid fa-pen-to-square fa-2xl"></i></button>
-            <p id="penger"></p>
+            <button id="edit"><i class="fa-solid fa-pen-to-square fa-2xl"></i></button>
+            <p id="penger">0 kr</p>
             <p id="dinePenger">Dine Penger</p>
         </div>
     </div>
