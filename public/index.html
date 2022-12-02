@@ -15,7 +15,7 @@
         <div class="blur">
             <div class="modal-content">
                 <p id="setText">Skriv inn din saldo</p>
-                <input inputmode="numeric" type="number" id="text" placeholder="Din Saldo"></input>
+                <input inputmode="numeric" type="number" id="text" class="text" placeholder="Din Saldo"></input>
                 <div class="btnContainer">
                     <button class="btnModal-penger" id="no">Nei</button>
                     <button class="btnModal-penger"  id="yes">Ja</button>
@@ -27,10 +27,22 @@
         <div class="blur">
             <div class="modal-content">
                 <p id="setText">Skriv inn produkt</p>
-                <input type="text" id="text" placeholder="Produkt"></input>
+                <input type="text" id="textProduct" class="text" placeholder="Produkt"></input>
                 <div class="btnContainer">
-                    <button class="btnModal-penger" id="no">Nei</button>
-                    <button class="btnModal-penger"  id="yes">Ja</button>
+                    <button class="btnModal-penger" id="noProduct">Nei</button>
+                    <button class="btnModal-penger"  id="yesProduct">Ja</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-money" class="modal">
+        <div class="blur">
+            <div class="modal-content">
+                <p id="setText">Skriv inn prisen</p>
+                <input type="text" id="textPrice" class="text" placeholder="Prisen"></input>
+                <div class="btnContainer">
+                    <button class="btnModal-penger" id="noPrice">Nei</button>
+                    <button class="btnModal-penger"  id="yesPrice">Ja</button>
                 </div>
             </div>
         </div>
@@ -38,7 +50,10 @@
     <div class="topBox">
         <div class="card">
             <button id="edit"><i class="fa-solid fa-pen-to-square fa-2xl"></i></button>
-            <p id="penger">0 kr</p>
+            <div class="topText">
+                <p id="penger">0</p>
+                <p id="kr">kr</p>
+            </div>
             <p id="dinePenger">Dine Penger</p>
         </div>
     </div>
@@ -48,8 +63,7 @@
                 <button id="trash" class="buttonFunc" ><i class="fa-solid fa-trash-can fa-2xl"></i> </button>
                 <button id="add" class="buttonFunc" ><i class="fa-solid fa-plus fa-2xl"></i> </button>
             </div>
-            <div class="listContainer">
-
+            <div id="listContainer">
             </div>
         </div>
     </div>
