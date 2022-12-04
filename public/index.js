@@ -81,25 +81,51 @@ container.addEventListener('click', (event) => {
         function getPris() {
             const currentPenger = document.getElementById("penger").innerHTML;
             const pris = document.getElementById("textPrice").value;
-            const container = document.querySelector('#listContainer');
 
             document.getElementById("penger").innerHTML = currentPenger - pris;
             document.getElementById("textPrice").value = "";
             document.getElementById("popup-money").style.display = "none";
             event.target.style.backgroundColor = '#ff5e6c';
             event.target.style.textDecoration = 'line-through';
+
+            event.target.addEventListener("click", restoreMoney);
+
+            function restoreMoney() {
+                const currentPenger = document.getElementById("penger").innerHTML;
+                console.log(pris + "res")
+                console.log(currentPenger + "current")
+                document.getElementById("penger").innerHTML = Number(pris) + Number(currentPenger);
+                console.log(Number(pris) + Number(currentPenger))
+                event.target.style.backgroundColor = '#ccc';
+                event.target.style.textDecoration = 'none';
+                document.getElementById("popup-money").style.display = "none";
+                event.target.removeEventListener("click", restoreMoney);
+            }
+
         }
     }
 
 });
 
 // delete
-// const container = document.querySelector('#listContainer');
-// container.addEventListener('click', (event) => {
-//   if(event.target.className == 'itemDiv')
-//   { 
-//     event.target.remove();
-// }else {
-//   return;
-// }
-// });
+const trash = document.getElementById("trash");
+trash.addEventListener("click", deleteMode)
+
+function deleteMode() {
+    const container = document.querySelector('#listContainer');
+    trash.style.backgroundColor = "#ccc"
+    container.addEventListener('click', (event) => {
+        if (event.target.className == 'itemDiv') {
+            event.target.remove();
+        } else {
+            return;
+        }
+
+    });
+}
+container.addEventListener('click', (event) => {
+    if (deleteMode = "called") {
+        event.target.removeEventListener;
+        trash.style.backgroundColor = "#ff5e6c";
+    }
+});

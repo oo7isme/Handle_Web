@@ -1,21 +1,24 @@
-body{
+body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
     height: 100vh;
-    background-color:#ffaaab;
+    background-color: #ffaaab;
     display: flex;
     flex-direction: column;
 }
-.topBox{
+
+.topBox {
     height: 35%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card{
+
+.card {
     height: 70%;
     width: 80%;
     border-radius: 50px;
@@ -26,39 +29,46 @@ body{
     align-items: center;
     flex-direction: column;
 }
-#penger{
-    font-size:50px ;
+
+#penger {
+    font-size: 50px;
     font-weight: bold;
     margin-top: 20px;
 }
-#kr{
-    font-size:50px ;
+
+#kr {
+    font-size: 50px;
     font-weight: bold;
     margin-top: 20px;
 }
-.topText{
+
+.topText {
     display: flex;
     flex-direction: row;
-    gap:15px;
+    gap: 15px;
 }
-#dinePenger{
-    font-size:20px;
+
+#dinePenger {
+    font-size: 20px;
     margin-top: -40px;
 }
-#edit{
+
+#edit {
     border: none;
-    background-color:white;
+    background-color: white;
     position: absolute;
     margin-left: 225px;
     margin-top: -125px;
     height: 30px;
     width: 30px;
 }
-.lowerBox{
+
+.lowerBox {
     height: 70%;
     width: 100%;
 }
-.buttons{
+
+.buttons {
     width: 100%;
     height: 15%;
     display: flex;
@@ -66,41 +76,48 @@ body{
     align-items: center;
     gap: 5%;
 }
+
 .fa-trash-can {
     color: white;
 }
+
 .fa-plus {
     color: white;
 }
-.buttonFunc{
-    display:block;
+
+.buttonFunc {
+    display: block;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color:#ff5e6c;
-    border: 1px solid red;
+    background-color: #ff5e6c;
+    border: none;
 }
- 
-.itemContainer{
+
+.itemContainer {
     background-color: white;
     height: 100%;
     width: 100%;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
 }
+
+
 /* Modal */
-.modal{
+
+.modal {
     position: fixed;
-    display: none ;
+    display: none;
     justify-content: center;
     align-items: center;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1;
 }
-.modal-content{
+
+.modal-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,10 +128,12 @@ body{
     height: 270px;
     width: 300px;
 }
-#setText{
-    font-size:1.7rem;
+
+#setText {
+    font-size: 1.7rem;
 }
-input{
+
+input {
     width: 70%;
     padding: 12px 10px;
     display: inline-block;
@@ -122,39 +141,47 @@ input{
     border-radius: 5px;
     font-size: 25px;
 }
-.btnContainer{
-    display:flex;
+
+.btnContainer {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:40%;
+    gap: 40%;
     margin-top: 25px;
 }
-.btnModal-penger{
+
+.btnModal-penger {
     width: 50%;
-    background-color:#D3D3D3;
-    color: #1C2833 ;
+    background-color: #D3D3D3;
+    color: #1C2833;
     padding: 14px 20px;
-    font-size:20px;
+    font-size: 20px;
     font-weight: bold;
     border: none;
     border-radius: 15px;
 }
-#yes, #yesProduct,#yesPrice {
-    background-color:#ff5e6c;
+
+#yes,
+#yesProduct,
+#yesPrice {
+    background-color: #ff5e6c;
     color: white;
 }
-.fa-pen-to-square{
+
+.fa-pen-to-square {
     color: black;
 }
-#listContainer{
-    flex:1; 
+
+#listContainer {
+    flex: 1;
     min-height: 0;
-    height:80%;
-    gap:2%;
-    overflow :auto;
+    height: 80%;
+    gap: 2%;
+    overflow: auto;
 }
-.itemDiv{
+
+.itemDiv {
     display: flex;
     width: 85%;
     height: 50px;
@@ -164,8 +191,15 @@ input{
     margin-bottom: 15px;
     align-items: center;
 }
-.itemText{
-    font-size:1.5rem;
+
+.itemText {
+    font-size: 1.5rem;
     margin-left: 60px;
     font-weight: bold;
+}
+
+.checked {
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 25px;
 }
