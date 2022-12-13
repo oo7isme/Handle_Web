@@ -39,7 +39,7 @@
         <div class="blur">
             <div class="modal-content">
                 <p id="setText">Skriv inn prisen</p>
-                <input type="text" id="textPrice" class="text" placeholder="Prisen"></input>
+                <input type="number" id="textPrice" class="text" placeholder="Prisen"></input>
                 <div class="btnContainer">
                     <button class="btnModal-penger" id="noPrice">Nei</button>
                     <button class="btnModal-penger"  id="yesPrice">Ja</button>
@@ -68,6 +68,13 @@
         </div>
     </div>
  </div>
+
+ <template id="vareTemplate">
+    <div class="itemDiv">
+        <p class="itemText"></p>
+        <p class="itemPris"></p>
+    </div>
+ </template>
 </body>
     <script type="module" src='index.js'></script>
 </html>
